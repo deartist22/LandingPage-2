@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <title>Lava</title>
   </head>
   <body>
     <header class="header">
-      <div class="header--logo"></div>
+      <div class="header--logo">L</div>
       <nav class="header__nav">
         <a href="#">about</a>
         <a href="#">articles</a>
@@ -18,8 +22,8 @@
     </header>
 
     <div class="main__content">
-      <div class="main__img"><img src="" /></div>
-      <div class="main__content__title">
+      <div class="main__image"></div>
+      <div class="main__content__title container">
         <h1 class="main__content__h1">Lava</h1>
         <h2 class="main__content__h2">A human exploration</h2>
       </div>
@@ -29,7 +33,7 @@
       <h2 class="info__section__h2">Slow Travelling</h2>
       <h3 class="info__section__h3">A travel blog</h3>
       <hr class="info__section__hr" />
-      <p class="info__section__p">
+      <p class="info__section__p container">
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
         dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -41,31 +45,39 @@
       <h3 class="articles__section__h3">our most recent posts</h3>
       <hr class="articles__section__hr" />
       <div class="articles__section__div">
-        <img src="" />
-        <h2 class="articles__section__div__h2">Tunza</h2>
-        <h3 class="articles__section__div__h3">Rugged port</h3>
-        <hr class="articles__section__div__hr" />
+        <div class="background-image first-image"></div>
+        <div class="articles__section__info">
+          <h2 class="articles__section__div__h2">Tunza</h2>
+          <h3 class="articles__section__div__h3">Rugged port</h3>
+          <hr class="articles__section__div__hr" />
+        </div>
       </div>
       <div class="articles__section__div">
-        <img src="" />
-        <h2 class="articles__section__div__h2">Timor</h2>
-        <h3 class="articles__section__div__h3">Untoched beaches</h3>
-        <hr class="articles__section__div__hr" />
+        <div class="background-image second-image"></div>
+        <div class="articles__section__info">
+          <h2 class="articles__section__div__h2">Timor</h2>
+          <h3 class="articles__section__div__h3">Untouched beaches</h3>
+          <hr class="articles__section__div__hr" />
+        </div>
       </div>
       <div class="articles__section__div">
-        <img src="" />
-        <h2 class="articles__section__div__h2">Lombok</h2>
-        <h3 class="articles__section__div__h3">Endless Lava</h3>
-        <hr class="articles__section__div__hr" />
+        <div class="background-image third-image"></div>
+        <div class="articles__section__info">
+          <h2 class="articles__section__div__h2">Lombok</h2>
+          <h3 class="articles__section__div__h3">Endless Lava</h3>
+          <hr class="articles__section__div__hr" />
+        </div>
       </div>
     </section>
 
     <section class="subscribe__section">
-      <h2 class="subscribe__section__h2">Subscribe</h2>
-      <h3 class="subscribe__section__h3">Sign-up to our newsletter</h3>
-      <hr class="subscribe__section__hr" />
-      <input type="text" placeholder="Your email" />
-      <a href="#">submit</a>
+      <div class="container">
+        <h2 class="subscribe__section__h2">Subscribe</h2>
+        <h3 class="subscribe__section__h3">Sign-up to our newsletter</h3>
+        <hr class="subscribe__section__hr" />
+        <input type="email" placeholder="Your email" />
+        <a href="#" class="btn btn-submit">submit</a>
+      </div>
     </section>
 
     <footer class="footer">
