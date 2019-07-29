@@ -222,3 +222,13 @@ footer {
   text-decoration: none;
   cursor: pointer;
 }
+
+@media only screen and (min-width: 900px) {
+  .articles__section {
+    display: block;
+  }
+
+  .articles__section__div {
+    width: 32%;
+  }
+}
