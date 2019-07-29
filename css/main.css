@@ -56,11 +56,31 @@ header {
   z-index: 10;
 }
 
+.header--logo {
+  margin: 15px 40px;
+  color: #2b2c2b;
+}
+
+.header--logo,
+.footer--logo {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+}
+
 .header__nav {
   display: flex;
   flex-direction: column;
-  margin-right: 40px;
   margin-top: 10px;
+
+  text-align: right;
+}
+
+.header__nav a {
+  line-height: 1.8;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #2b2c2b;
+  cursor: pointer;
 }
 
 .main__content {
@@ -106,13 +126,13 @@ section {
   display: flex;
   margin: 0 auto;
   width: 90%;
+  padding: 30px 0;
 }
 
 .articles__section__div {
   position: relative;
   justify-content: center;
   text-align: center;
-
   min-height: 500px;
   min-width: 100%;
   padding: 5px;
@@ -161,6 +181,7 @@ section {
 
 .info__section {
   padding: 30px 0;
+  background: #2e2e2e;
 }
 
 .info__section__p {
@@ -178,6 +199,7 @@ section {
 .subscribe__section__h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .articles__section__h3,
@@ -208,6 +230,7 @@ footer {
 
 .footer--logo {
   display: none;
+  color: #fff;
 }
 
 .footer__nav {
@@ -224,11 +247,82 @@ footer {
 }
 
 @media only screen and (min-width: 900px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+  }
+
+  .header--logo {
+    display: inline-block;
+    margin-left: 120px;
+  }
+
+  .header__nav {
+    display: flex;
+    flex-direction: row;
+    margin: 20px -185px 0 0px;
+  }
+  .header__nav a {
+    padding: 0 30px;
+  }
+
+  .info__section__p {
+    padding: 0 25%;
+  }
+
   .articles__section {
     display: block;
+    padding: 50px 5px;
+  }
+
+  .articles__section div:nth-of-type(2) {
+    margin-left: 10%;
+  }
+  .articles__section div:nth-of-type(3) {
+    margin: 10px 30px;
+  }
+
+  .articles__section div:nth-of-type(4) {
+    margin-right: 10%;
+  }
+
+  .articles__section--main {
+    display: block;
+    text-align: center;
   }
 
   .articles__section__div {
-    width: 32%;
+    display: inline-block;
+    margin: 10px 0;
+    min-width: 25%;
+  }
+  .articles__section__hr,
+  .subscribe__section__hr {
+    margin: 20px 49%;
+  }
+
+  input[type="email"],
+  .btn-submit {
+    display: inline-block;
+    width: 50%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer--logo {
+    display: inline-block;
+  }
+
+  .footer__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .footer__nav a {
+    padding: 0 30px;
   }
 }
